@@ -25,7 +25,13 @@
     [super viewDidLoad];
     
     /*---------------------*/
-    b = 10;  //square，b都为成员变量也会发生循环引用
+    /**
+     *
+     *  square，b都为成员变量也会发生循环引用。
+     *  self强引用square，square里又强引用了b，b为成员变量强引用了self，发生循环引用
+     *
+     */
+    b = 10;
     square = ^(int a){
         return b + a;
     };

@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface BlockView : UIView
-
+//???: 为什么用copy，而不是strong
 @property(nonatomic, copy)int (^square)(int a);
-
 
 @end
