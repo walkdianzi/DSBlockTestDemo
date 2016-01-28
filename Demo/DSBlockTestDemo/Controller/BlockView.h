@@ -12,4 +12,5 @@
 
 @property(nonatomic, copy)int (^square)(int a);
 
+
 @end
